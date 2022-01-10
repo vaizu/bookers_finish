@@ -5,7 +5,18 @@
 <% end %>
 <h1>Editing Book</h1>
 
-
+<% if @book.errors.any? %>
+<div class = "erro">
+<h2 class = "error1">
+  <%= @book.errors.count %>errors prohibited this book from being saved:
+  </h2>
+  <ul>
+    <% @book.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+   </div>
+<% end %>
 
 <%= form_with model: @book, url: update_book_path(@book.id), method: :patch, local: true do |f| %>
 
@@ -25,4 +36,4 @@
 </div>
 <% end %>
 
-    <%= link_to "Show", show_book_path(@book.id) %> | <%= link_to "Back", '/books' %>
+    <%= link_to "Show", book_path(@book.id) %> | <%= link_to "Back", '/books' %>
