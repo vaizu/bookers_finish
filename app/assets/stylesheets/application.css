@@ -1,4 +1,4 @@
-/*
+ /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -13,3 +13,54 @@
  *= require_tree .
  *= require_self
  */
+
+body{
+  margin:33px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333;
+}
+td{
+  padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+a{
+  color: #000;
+}
+.erro{
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+.error1{
+  font-size: 12px;
+  background-color: #c00;
+  padding: 5px 5px 5px 15px;
+  text-align: left;
+  color: #fff;
+  margin: -7px;
+  margin-bottom: 0;
+}
+ul{
+  margin: 33px;
+  font-size: 13px;
+  line-height: 18px
+}
+
+p{
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+label{
+  display: block;
+}
+div.field{
+  margin-bottom: 10px;
+}
+div.actions{
+  margin-bottom: 10px;
+}
